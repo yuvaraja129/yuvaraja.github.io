@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="generic.html">Table of Contents</a></li>
+							<li class="active"><a href="index.html">Projects</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<span class="date">Feburary 2, 2025</span>
+									<h2>PDF Information Extraction Excel Script</h2>
+									<p>I built a lightweight locator that scans every annual‑report PDF in a directory, pinpoints the first page containing a “Letter to Investors/Shareholders/Stakeholders” headline using a compiled regex, and outputs a neat two‑column CSV (file, start_page). Instead of pulling the letter’s full text, it simply logs where the section starts, letting downstream tools decide if or how to extract the content later. The core loop relies on pdfminer.six for fast text scraping and tqdm for progress bars, while robust try/except blocks capture corrupt or password‑protected files without breaking the batch run.</p>
+								</header>
+								<a class="image main"><img src="images/pdfinfo.png" alt="" /></a>
+                                <li style="text-align: left;">I leveraged stream‑level text extraction with pdfminer.six, avoiding heavyweight OCR for born‑digital reports.</li>
+                                <li style="text-align: left;">I crafted regex heuristics that balance precision (“Letter to Stakeholders”) and recall (“LETTER TO SHAREHOLDERS”) across wildly different report layouts.</li>
+                                <li style="text-align: left;">I implemented fault‑tolerant batch processing that logs JSON‑encoded errors to stderr so the main CSV stays clean.</li>
+                                <li style="text-align: left;">I strengthened my understanding of modular CLI design—a single‑responsibility script that slots smoothly into larger ETL pipelines without side effects.</li>
+                                    <br>
+                                <h5><a href="https://docs.google.com/document/d/1JlHRwVsIvOqLIFKf7spwrV8eBuRa1bKOSAIyn9sKBtw/edit?usp=sharing">Project Code</a></h5>
+							</article>
+
+					</div>
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

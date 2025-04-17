@@ -125,6 +125,17 @@
 								</article>
 								<article>
 									<header>
+										<span class="date">November 26, 2024</span>
+										<h2><a href="aletextr.html">AnnualReports Letter Identification Script</a></h2>
+									</header>
+									<a href="aletextr.html" class="image fit"><img src="images/areptext.png" alt="" /></a>
+									<p>The script was developed to automate the identification of the "Letter to Investors" sections within annual report PDFs sourced from multiple companies. By converting annual report PDFs into XML format, the script enhanced structured data handling, significantly improving the accuracy and consistency of the identification process. Leveraging Python libraries such as pandas and openpyxl facilitated seamless integration with financial analysis workflows, reducing manual interventions and minimizing errors.</p>
+									<ul class="actions special">
+										<li><a href="aletextr.html" class="button">Full Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
 										<span class="date">January 3, 2025</span>
 										<h2><a href="tfdf.html">Tf-iDf Script</a></h2>
 									</header>
@@ -132,6 +143,50 @@
 									<p>This project focused on implementing a Term Frequency-Inverse Document Frequency (TF-IDF) model to analyze and extract key insights from textual data in company annual reports. Using Python's scikit-learn library, the script was designed to identify the most relevant terms within financial documents, aiding in sentiment analysis and trend identification for my mentor’s research project.</p>
 									<ul class="actions special">
 										<li><a href="tfdf.html" class="button">Full Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Feburary 2, 2025</span>
+										<h2><a href="PDFInfoExtractScript.html">PDF Information Extraction Script</a></h2>
+									</header>
+									<a href="PDFInfoExtractScript.html" class="image fit"><img src="images/pdfinfo.png" alt="" /></a>
+									<p>I built a lightweight locator that scans every annual‑report PDF in a directory, pinpoints the first page containing a “Letter to Investors/Shareholders/Stakeholders” headline using a compiled regex, and outputs a neat two‑column CSV (file, start_page). Instead of pulling the letter’s full text, it simply logs where the section starts, letting downstream tools decide if or how to extract the content later. The core loop relies on pdfminer.six for fast text scraping and tqdm for progress bars, while robust try/except blocks capture corrupt or password‑protected files without breaking the batch run.</p>
+									<ul class="actions special">
+										<li><a href="PDFInfoExtractScript.html" class="button">Full Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">March 2, 2025</span>
+										<h2><a href="tfidfe.html">TF-IDF Excel Script</a></h2>
+									</header>
+									<a href="tfidfe.html" class="image fit"><img src="images/tfdfa.png" alt="" /></a>
+									<p>The script was designed to automate the formatting and integration of TF-IDF analysis results into Excel sheets. Utilizing Python libraries such as pandas and openpyxl, the script efficiently converted raw TF-IDF data into structured Excel formats, significantly enhancing data visualization and facilitating deeper analysis. This automation streamlined integration with existing data analysis workflows, reducing manual formatting tasks and ensuring high data accuracy.</p>
+									<ul class="actions special">
+										<li><a href="tfidfe.html" class="button">Full Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">March 8, 2025</span>
+										<h2><a href="ptopdf.html">Print to PDF Script</a></h2>
+									</header>
+									<a href="ptopdf.html" class="image fit"><img src="images/ptopdf.png" alt="" /></a>
+									<p>I engineered this Python pipeline to transform sprawling executive‑history spreadsheets into clean, analysis‑ready tables. It ingests the raw Excel file, reshapes the 50‑column “wide” résumé blocks into tidy rows, tags each entry as a board seat or operating role with a layered regex classifier, and writes two polished sheets—Executive_Roles and Board_Roles—back to Excel. Built‑in assertions and null‑proof string handling keep the flow resilient, while memory‑savvy chunking lets the job scale comfortably to six‑figure record sets.</p>
+									<ul class="actions special">
+										<li><a href="ptopdf.html" class="button">Full Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">March 16, 2025</span>
+										<h2><a href="cxo.html">CXO Sorting Script</a></h2>
+									</header>
+									<a href="cxo.html" class="image fit"><img src="images/cxo.png" alt="" /></a>
+									<p>This script efficiently processes and matches detailed CXO role information from extensive datasets. It organizes, merges, and cleans executive-level professional experiences, focusing specifically on distinguishing board membership roles from other executive positions. The Python-based implementation leverages data manipulation libraries to optimize accuracy and integrity of information for clear, actionable insights.</p>
+									<ul class="actions special">
+										<li><a href="cxo.html" class="button">Full Project</a></li>
 									</ul>
 								</article>
 
